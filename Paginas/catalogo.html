@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cócteles</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c3b6be1f7.js" crossorigin="anonymous"></script>
+    <script src="catalog.js" defer></script>
+    <script src="../JS/navbar.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #006dbaab;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Traguito</a>
+            <div class="navbar-center">
+                <img src="../imagenes/logo1.png" alt="Logo" class="navbar-logo" onclick="toggleSecondaryNavbar()">
+            </div>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar cócteles" aria-label="Buscar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación secundaria -->
+    <div id="navbarSecondary" class="navbar-secondary">
+        <div class="container2">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
+            <a class="nav-link" href="carrito.html">
+                Carrito <span id="cart-count" class="badge badge-light">0</span>
+            </a>
+            <a class="nav-link" href="formulario.html">Formulario</a>
+        </div>
+    </div>
+
+    <div id="notificationContainer"></div>
+
+    <section id="catalogo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Catálogo de Cócteles</h2>
+            <div id="productosCatalogo" class="row">
+                <!-- Los productos se generarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Email: Traguito25demayo@gmail.com</p>
+                    <p>Teléfono: +54-2345-675398</p>
+                    <p>Disfruta de los mejores cócteles en cada visita.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Información</h5>
+                    <p><a href="#" class="text-white">Política de privacidad</a></p>
+                    <p><a href="#" class="text-white">Términos y condiciones</a></p>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 Traguito. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
