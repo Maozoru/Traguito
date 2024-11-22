@@ -12,16 +12,16 @@
     <script src="../JS/navbar.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color: #006dbaab;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #006dbaab;">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Traguito</a>
             <div class="navbar-center">
                 <img src="../imagenes/logo1.png" alt="Logo" class="navbar-logo" onclick="toggleSecondaryNavbar()">
             </div>
-            <form class="form-inline ml-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar cócteles" aria-label="Buscar">
+            <form id="searchForm" class="form-inline ml-auto">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Buscar productos" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
+            </form>            
         </div>
     </nav>
 
@@ -38,6 +38,7 @@
 
     <div id="notificationContainer"></div>
 
+    <button id="favFilterBtn">🤍</button>
     <section id="catalogo" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Catálogo de Cócteles</h2>
@@ -71,6 +72,7 @@
             <p class="mt-4">&copy; 2024 Traguito. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../JS/barra.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
